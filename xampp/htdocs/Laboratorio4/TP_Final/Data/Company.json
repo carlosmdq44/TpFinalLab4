@@ -1,0 +1,35 @@
+[
+    {
+        "companyId": null,
+        "companyName": "Rocar",
+        "companyCity": "Mar Del Plata",
+        "companyDescription": "Security",
+        "companyEmail": "rocar@gmail.com",
+        "companyPhoneNumber": "156161165"
+    },
+    {
+        "companyId": null,
+        "companyName": "infosis",
+        "companyCity": "buenos aires",
+        "companyDescription": "informatica",
+        "companyEmail": "infosis@infosis.com",
+        "companyPhoneNumber": "1564654"
+    },
+
+    {
+        "companyId": null,
+        "companyName": "Alarmas Rocar",
+        "companyCity": "Mar Del Plata",
+        "companyDescription": "Alarmas Rocar",
+        "companyEmail": "carlos_mdq44@hotmail.com",
+        "companyPhoneNumber": "02234550356"
+    },
+    {
+        "companyId": null,
+        "companyName": "",
+        "companyCity": "",
+        "companyDescription": "",
+        "companyEmail": "",
+        "companyPhoneNumber": ""
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "studentId": null,
+        "careerId": null,
+        "firstname": "Lucas",
+        "lastname": "Ludue\u00f1a",
+        "dni": "40456123",
+        "gender": "Male",
+        "birthDate": "",
+        "email": "lucaslud13@hotmail.com",
+        "phone": "+5492236163540",
+        "active": "NO"
+    },
+    {
+        "studentId": null,
+        "careerId": null,
+        "firstname": "Lucas",
+        "lastname": "Ludue\u00f1a",
+        "dni": "40456123",
+        "gender": "Male",
+        "birthDate": "",
+        "email": "lucaslud13@hotmail.com",
+        "phone": "+5492236163540",
+        "active": "NO"
+    },
+    {
+        "studentId": null,
+        "careerId": null,
+        "firstname": "Vicky",
+        "lastname": "Genga",
+        "dni": "36992631",
+        "gender": "Famale",
+        "birthDate": "2021-09-30",
+        "email": "vicky@genga.com",
+        "phone": "2235478123",
+        "active": "YES"
+    },
+    {
+        "studentId": null,
+        "careerId": null,
+        "firstname": "Lucas",
+        "lastname": "Ludue\u00f1a",
+        "dni": "13392968",
+        "gender": "Male",
+        "birthDate": "2021-09-30",
+        "email": "lucaslud13@hotmail.com",
+        "phone": "+5492236163540",
+        "active": "NO"
+    }
+]

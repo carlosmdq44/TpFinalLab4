@@ -11,6 +11,7 @@
                          <th>Description</th>
                          <th>Email</th>
                          <th>Phone Number</th>
+                         <th>Action</th>
                     </thead>
                     <tbody> 
                          <?php foreach($companyList as $company) { ?>
@@ -21,7 +22,11 @@
                                    <td><?php echo $company->getCompanyDescription(); ?></td>
                                    <td><?php echo $company->getCompanyEmail(); ?></td>
                                    <td><?php echo $company->getCompanyPhoneNumber(); ?></td>
-
+                                   <td>
+                                        <!--a type="submit" href="<!?php echo FRONT_ROOT ?>Company/ModifyCompany/<!?php echo $company->getCompanyId() ?>" class="btn btn-success p-auto">Edit</a-->
+                                        <a type="submit" href="<?php echo FRONT_ROOT ?>Company/ShowModifyView" class="btn btn-success p-auto">Edit</a>
+                                        <a type="submit" href="<?php echo FRONT_ROOT ?>Company/RemoveCompany/<?php echo $company->getCompanyId() ?>" class="btn btn-danger p-auto">Delete</a> 
+                                   </td>
                               </tr>
                          <?php } ?>
                     </tbody>

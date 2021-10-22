@@ -1,35 +1,18 @@
 [
     {
-        "companyId": null,
-        "companyName": "Rocar",
+        "companyId": 2,
+        "companyName": "Accenture",
         "companyCity": "Mar Del Plata",
-        "companyDescription": "Security",
-        "companyEmail": "rocar@gmail.com",
-        "companyPhoneNumber": "156161165"
+        "companyDescription": "Tecnologia",
+        "companyEmail": "accenture@gmail.com",
+        "companyPhoneNumber": "1564564561"
     },
     {
-        "companyId": null,
-        "companyName": "infosis",
-        "companyCity": "buenos aires",
-        "companyDescription": "informatica",
+        "companyId": 3,
+        "companyName": "Infosis",
+        "companyCity": "Mar Del Plata",
+        "companyDescription": "Tecnologia",
         "companyEmail": "infosis@infosis.com",
-        "companyPhoneNumber": "1564654"
-    },
-
-    {
-        "companyId": null,
-        "companyName": "Alarmas Rocar",
-        "companyCity": "Mar Del Plata",
-        "companyDescription": "Alarmas Rocar",
-        "companyEmail": "carlos_mdq44@hotmail.com",
-        "companyPhoneNumber": "02234550356"
-    },
-    {
-        "companyId": null,
-        "companyName": "",
-        "companyCity": "",
-        "companyDescription": "",
-        "companyEmail": "",
-        "companyPhoneNumber": ""
+        "companyPhoneNumber": "1564564561"
     }
 ]

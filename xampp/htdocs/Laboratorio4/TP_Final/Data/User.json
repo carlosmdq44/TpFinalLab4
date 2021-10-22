@@ -1,0 +1,30 @@
+[
+    {
+        "studentId": 0,
+        "careerId": 0,
+        "firstName": "Administrados",
+        "lastName": "Universidad Tecnologica Nacional",
+        "dni": 3014545552,
+        "fileNumber": 4950013,
+        "gender": "f",
+        "birthDate": "01\/07\/1900",
+        "email": "administrador@utn.com.ar",
+        "phoneNumber": 2234369876,
+        "active": true,
+        "profile": "Admin"
+    },
+    {
+        "studentId": null,
+        "careerId": null,
+        "firstName": "German",
+        "lastName": "Oyarzo",
+        "dni": "36382357",
+        "fileNumber": "2235184843",
+        "gender": "Masculino",
+        "birthDate": "1991-11-15",
+        "email": "germanoyarzo@gmail.com",
+        "phoneNumber": "2235436385",
+        "active": "active",
+        "profile": "Student"
+    }
+]

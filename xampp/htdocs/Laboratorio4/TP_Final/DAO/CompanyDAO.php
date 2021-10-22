@@ -50,16 +50,22 @@
             $jsonContent = json_encode($jsonEncode , JSON_PRETTY_PRINT);
             file_put_contents($this->fileName ,$jsonContent);
         }
+
+        /********************************************************************************************/
         
         public function Add(Company $newCompany) {
             $this->retriveData();
+            $newCompany->setCompanyId($this->getCompanyLastId());
             array_push($this->companyList, $newCompany);
             $this->saveData();
         }
 
-        public function Remove($id) {
+        public function Remove($companyId) {
             $this->retriveData();
-            unset($this->companyList[$id]);
+            $this->companyList = array_filter($this->companyList, function($company) use($companyId){
+                return $company->getCompanyId() != $companyId;
+            });
+            $this->saveData();
         }
 
         public function Get($id) {
@@ -74,22 +80,49 @@
 
         public function update($newCompany) {
             $this->retriveData();
-            $studentList[$newCompany->getCompanyId()] = $newCompany;
+            foreach($this->companyList as $company){
+                if($company->getCompanyId() == $newCompany->getCompanyId()){
+                    $company->setName($newCompany->getCompanyName());
+                    $company->setCuit($newCompany->getCompanyCity());
+                    $company->setAdress($newCompany->getCompanyDescription());
+                    $company->setFounded($newCompany->getCompanyEmail());
+                    $company->setFounded($newCompany->getCompanyPhoneNumber());
+                }
+            }
             $this->saveData();
         }
-
-        public function GetByCompanyId($idCompany)
-        {
+        /*
+        public function GetByCompanyId($idCompany) {
             $this->retriveData();
-
             foreach ($this->companyList as $company) {
-                if ($company->getCompanyId() == $idCompany){
+                if ($company->getCompanyId() == $idCompany) {
                     return $company;
                 }
             }
-
             return null;
         }
+        */
+
+        public function GetByCompanyId($idCompany) {
+            $this->retriveData();
+            foreach($this->companyList as $company){
+                if($company->getCompanyId() == $idCompany){
+                    $companyCheck = $company;
+                } else {
+                    $companyCheck = null;
+                }
+            }
+            return $companyCheck;
+        }
+
+        private function getCompanyLastId() {
+            $id = 0;
+            foreach($this->companyList as $company) {
+                $id = ($company->getCompanyId() > $id) ? $company->getCompanyId() : $id;
+            }
+            return $id + 1;
+        }
+    
 
     }
 ?>
